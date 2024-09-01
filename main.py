@@ -1,6 +1,9 @@
 import csv
 import argparse
 
+
+
+
 def readCsv(file_path):
     data = []
     with open(file_path, mode='r', newline='') as file:
@@ -12,7 +15,7 @@ def readCsv(file_path):
 def printValue(data, column_name, value):
     for row in data:
         if row.get(column_name) == value:
-            print(row)
+            print(row['Name'])
 
 
 def main():
